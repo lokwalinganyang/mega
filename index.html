@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Teknologia - Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .logo-img {
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="bg-gradient-to-r from-white to-blue-900 text-blue-900 fixed w-full top-0 z-10 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="MEGA.png" alt="Mega Teknologia Logo" class="logo-img">
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-orange-500 transition font-bold text-white text-lg uppercase tracking-wide shadow-md hover:shadow-lg rounded px-3 py-1">Home</a></li>
+        <li><a href="#services" class="hover:text-orange-500 transition font-bold text-white text-lg uppercase tracking-wide shadow-md hover:shadow-lg rounded px-3 py-1">Services</a></li>
+        <li><a href="#contact" class="hover:text-orange-500 transition font-bold text-white text-lg uppercase tracking-wide shadow-md hover:shadow-lg rounded px-3 py-1">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen relative overflow-hidden">
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+      <source src="VIDEO.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-700 opacity-70"></div>
+    <div class="hero-text text-center relative z-10 flex flex-col items-center justify-center h-full text-white">
+      <h2 class="text-5xl font-bold mb-4">Welcome to Mega Teknologia</h2>
+      <p class="text-xl mb-6">Innovative IT Solutions for a Digital Future</p>
+      <a href="#services" class="bg-orange-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🌐</div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Internet & Network Solutions</h3>
+          <p class="text-gray-600">High-speed, secure, and reliable network infrastructure tailored to your business needs.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">🎨</div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Creative & Digital Media</h3>
+          <p class="text-gray-600">Engaging content creation, branding, and digital marketing to boost your online presence.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">💻</div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">IT & Computer Services</h3>
+          <p class="text-gray-600">Comprehensive IT support, hardware maintenance, and system optimization.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <div class="text-4xl mb-4">💻</div>
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Web & Software Development</h3>
+          <p class="text-gray-600">Custom websites and software solutions designed to drive your business forward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-blue-900 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+      <p class="text-lg mb-4">Have questions or ready to start a project? Contact us today!</p>
+      <p class="text-lg mb-2">📧 Email: megateknologia023@gmail.com</p>
+      <p class="text-lg mb-2">📞 Phone: +254-702-567-897</p>
+      <p class="text-lg mb-6">📍 Address:Mombasa, Kenya</p>
+      <a href="mailto:info@megateknologia.com" class="inline-block bg-orange-500 text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Send Us a Message</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2025 Mega Teknologia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
