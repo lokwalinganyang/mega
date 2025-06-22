@@ -1,4 +1,5 @@
-// GSAP Animations
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener('DOMContentLoaded', () => {
   // Hero Section Animation
   gsap.fromTo(
@@ -47,6 +48,8 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
+  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', !expanded);
 });
 
 // Smooth Scroll for All Navigation Links
@@ -59,7 +62,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
     if (window.innerWidth <= 1024) {
-      mobileMenu.classList.add('hidden'); // Hide menu after clicking on mobile
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', 'false');
     }
   });
 });

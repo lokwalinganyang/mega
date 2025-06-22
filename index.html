@@ -6,6 +6,7 @@
   <title>Mega Teknologia - Landing Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <style>
     .logo-img {
@@ -18,7 +19,7 @@
   <!-- Navigation -->
   <nav class="bg-gradient-to-r from-white to-blue-900 text-blue-900 fixed w-full top-0 z-10 shadow-lg">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <img src="logo.png" alt="Mega Teknologia Logo" class="logo-img">
+      <img src="MEGA.png" alt="Mega Teknologia Logo" class="logo-img">
       <div class="lg:flex lg:space-x-6 hidden">
         <ul class="flex space-x-6">
           <li><a href="#home" class="hover:text-orange-500 transition font-bold text-white text-lg uppercase tracking-wide shadow-md hover:shadow-lg rounded px-3 py-1">Home</a></li>
@@ -27,7 +28,7 @@
         </ul>
       </div>
       <div class="lg:hidden">
-        <button id="menu-toggle" class="text-white focus:outline-none">
+        <button id="menu-toggle" class="text-white focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
@@ -43,11 +44,11 @@
 
   <!-- Hero Section -->
   <section id="home" class="h-screen relative overflow-hidden">
-    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
-      <source src="video.mp4" type="video/mp4">
+    <video autoplay muted loop poster="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg" class="absolute top-0 left-0 w-full h-full object-cover">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-background-with-animation-of-white-8477-large.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-blue-700 opacity-70"></div>
+    <div class="video-overlay"></div>
     <div class="hero-text text-center relative z-10 flex flex-col items-center justify-center h-full text-white">
       <h2 class="text-5xl font-bold mb-4">Welcome to Mega Teknologia</h2>
       <p class="text-xl mb-6">Innovative IT Solutions for a Digital Future</p>
@@ -71,7 +72,7 @@
           <p class="text-gray-600">Engaging content creation, branding, and digital marketing to boost your online presence.</p>
         </div>
         <div class="service-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-          <div class="text-4xl mb-4">💻</div>
+          <div class="text-4xl mb-4">🖥️</div>
           <h3 class="text-xl font-semibold text-blue-900 mb-2">IT & Computer Services</h3>
           <p class="text-gray-600">Comprehensive IT support, hardware maintenance, and system optimization.</p>
         </div>
