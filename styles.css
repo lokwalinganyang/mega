@@ -32,3 +32,7 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+
+#mobile-menu {
+  transition: opacity 0.3s ease;
+}
